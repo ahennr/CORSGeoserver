@@ -1,0 +1,12 @@
+version: '2'
+services:
+  nginx:
+    build: ./nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - geoserver
+  geoserver:
+    build: ./geoserver
+    ports:
+      - "8080:8080"
