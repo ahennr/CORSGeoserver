@@ -8,5 +8,3 @@ services:
       - geoserver
   geoserver:
     build: ./geoserver
-    ports:
-      - "8080:8080"
